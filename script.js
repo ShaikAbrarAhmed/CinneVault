@@ -1,4 +1,4 @@
-const API_KEY = 'b0a0f641471612fca8f298fa4341e2ef';
+const API_KEY = '86196e194d379035e9b074a3ef17e75a';
 const BASE_URL = 'https://api.themoviedb.org/3';
 
 const searchBox = document.getElementById('searchBox');
