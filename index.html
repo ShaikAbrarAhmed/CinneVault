@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVault</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🎬 CineVault</div>
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search for movies...">
+            <button id="searchButton">🔍</button>
+            <select id="languageSelect">
+                <option value="">🌐 Language</option>
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="te">Telugu</option>
+                <option value="ta">Tamil</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+            </select>
+        </div>
+    </header>
+
+    <section id="movie-container" class="movie-container">
+        <h2>Popular Movies</h2>
+        <div class="movies-grid">
+            <!-- Movies will be added here -->
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalPoster" src="" alt="Movie Poster">
+            <h2 id="modalTitle"></h2>
+            <p id="modalOverview"></p>
+            <p><strong>⭐ Rating:</strong> <span id="modalRating"></span></p>
+            <p><strong>📅 Release Date:</strong> <span id="modalRelease"></span></p>
+            <p><strong>🎭 Genre:</strong> <span id="modalGenre"></span></p>
+            <a id="trailerButton" href="#" target="_blank"><button>▶️ Watch Trailer</button></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
